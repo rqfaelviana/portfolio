@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #111111;
+  background-color: #020813;
   color: #fff;
   font-family: "JetBrains Mono", monospace;
 }
@@ -14,20 +14,25 @@ body {
 /* Navbar */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #124fbf;
+  background-color: #020c22;
+  width: 292px;
+  height: 48px;
+  margin: 30px auto 0;
+  border-radius: 15px;
 }
 
 nav h1 {
   font-size: 24px;
+  margin-right: 20px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 30px;
 }
 
 nav ul li {
@@ -35,9 +40,17 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  display: block;
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+nav ul li a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(100%) !important;
 }
 
 /* Seções */
@@ -46,22 +59,14 @@ section {
   text-align: center;
 }
 
-/*#hero {
-  background: #111111;
-  padding: 80px 20px;
-
-
-}*/
-
 .project-card {
   background: #124fbf;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 15px;
   margin: 20px auto;
   max-width: 400px;
 }
 
-/* Contato */
 a {
   color: #124fbf;
   text-decoration: none;
