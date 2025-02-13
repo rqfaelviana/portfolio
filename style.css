@@ -24,19 +24,10 @@ nav {
   border-radius: 15px;
 }
 
-nav h1 {
-  font-size: 24px;
-  margin-right: 20px;
-}
-
 nav ul {
   list-style: none;
   display: flex;
   gap: 30px;
-}
-
-nav ul li {
-  display: inline;
 }
 
 nav ul li a {
@@ -44,6 +35,21 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* responsividade do menu */
+@media (max-width: 600px){
+  nav {
+    width: 90%;
+    padding: 10px;
+  }
+  nav ul{
+    gap: 15px
+  }
+  nav ul li a img{
+    width: 18px;
+    height: 18px;
+  }
 }
 
 #hero {
@@ -66,6 +72,25 @@ nav ul li a {
 #hero p {
   font-size: 1.2rem;
   color: #ddd;
+}
+
+/* responsividade do hero */
+@media (max-width: 768px) {
+  #hero h2{
+    font-size: 2.5rem;
+  }
+  hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px){
+  #hero h2 {
+    font-size: 2rem;
+  }
+  #hero p {
+    font-size: 0.9rem;
+  }
 }
 
 .tooltip {
@@ -101,7 +126,7 @@ nav ul li a img {
   width: 20px;
   height: 20px;
   transition: transform 0.3s ease;
-  filter: brightness(0) saturate(80%) invert(100%) !important;
+  filter: brightness(0) saturate(100%) invert(100%) !important;
 }
 
 section {
@@ -115,6 +140,25 @@ section {
   border-radius: 15px;
   margin: 20px auto;
   max-width: 400px;
+}
+
+/* Responsividade geral */ 
+@media (max-width: 768px){
+  section {
+    padding: 40px;
+  }
+  .project-card{
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 30px;
+  }
+  .project-card{
+    padding: 15px;
+  }
 }
 
 a {
