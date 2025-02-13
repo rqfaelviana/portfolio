@@ -173,3 +173,50 @@ a {
 .white{
   color:#fff
 }
+#profile-card {
+  position: fixed;
+  left: 30px; /* Define a posição fixa na lateral */
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #091122;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px; /* Define um tamanho padrão */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px; /* Borda arredondada, mas ainda quadrada */
+  object-fit: cover;
+  border: 3px solid #124fbf;
+}
+
+#profile-card h1 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+#profile-card p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease-in-out;
+  filter: brightness(0) saturate(100%) invert(100%) !important;
+}
