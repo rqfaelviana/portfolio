@@ -8,7 +8,7 @@
 body {
   background-color: #020813;
   color: #fff;
-  font-family: "sans-serif", monospace;
+  font-family: sans-serif;
 }
 
 /* Navbar */
@@ -16,18 +16,18 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   background-color: #091122;
-  width: 292px;
-  height: 48px;
-  margin: 30px auto 0;
+  width: 320px;
+  height: 50px;
+  margin: 40px auto 0;
   border-radius: 15px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 35px;
 }
 
 nav ul li a {
@@ -43,10 +43,10 @@ nav ul li a {
     width: 90%;
     padding: 10px;
   }
-  nav ul{
-    gap: 15px
+  nav ul {
+    gap: 20px;
   }
-  nav ul li a img{
+  nav ul li a img {
     width: 18px;
     height: 18px;
   }
@@ -58,94 +58,102 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 220px;
+  height: 450px;
   text-align: center;
+  margin-top: 30px;
 }
 
 #hero h2 {
-  font-size: 3rem;
+  font-size: 5.5rem;
   font-weight: bold;
   color: #124fbf;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 #hero p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #ddd;
 }
 
 /* responsividade do hero */
-@media (max-width: 768px) {
-  #hero h2{
-    font-size: 2.5rem;
+@media (max-width: 1024px) {
+  #hero {
+    height: 350px;
   }
-  hero p {
-    font-size: 1rem;
+  #hero h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px){
+  #hero{
+    height: 280px;
+  }
+  #hero h2 {
+    font-size: 3.5rem;
+  }
+  #hero p {
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 480px){
+  #hero {
+    height: 230px;
+  }
   #hero h2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   #hero p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
 .tooltip {
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(18, 79, 191, 0.9);
   color: white;
-  padding: 3px 5px;
+  padding: 5px 8px;
   border-radius: 6px;
   font-size: 12px;
   white-space: nowrap;
   opacity: 0;
-  transition: transform 0.27s ease-out, opacity 0.27s ease-out,
-    bottom 0.27s ease-out;
+  transition: all 0.27s ease-out;
   pointer-events: none;
 }
 
 nav ul li a:hover .tooltip {
   opacity: 1;
-  transform: translateX(-50%);
-  bottom: -40px;
-}
-
-nav ul li a:not(:hover) .tooltip {
-  transform: translateX(-50%);
-  opacity: 0;
-  bottom: -15px;
+  bottom: -42px;
 }
 
 nav ul li a img {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   transition: transform 0.3s ease;
   filter: brightness(0) saturate(100%) invert(100%) !important;
 }
 
 section {
-  padding: 60px;
+  padding: 70px;
   text-align: center;
 }
 
 .project-card {
   background: #124fbf;
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
-  margin: 20px auto;
-  max-width: 400px;
+  margin: 30px auto;
+  max-width: 450px;
 }
 
 /* Responsividade geral */ 
 @media (max-width: 768px){
   section {
-    padding: 40px;
+    padding: 50px;
   }
   .project-card{
     max-width: 90%;
@@ -154,10 +162,10 @@ section {
 
 @media (max-width: 480px) {
   section {
-    padding: 30px;
+    padding: 40px;
   }
   .project-card{
-    padding: 15px;
+    padding: 20px;
   }
 }
 
@@ -166,57 +174,70 @@ a {
   text-decoration: none;
 }
 
-.blue{
-  color: #124fbf
-}
-
-.white{
-  color:#fff
-}
 #profile-card {
   position: fixed;
-  left: 30px; /* Define a posição fixa na lateral */
+  left: 20vw;
   top: 50%;
-  transform: translateY(-50%); /* Centraliza verticalmente */
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: #091122;
-  padding: 20px;
+  padding: 30px;
   border-radius: 15px;
-  width: 250px; /* Define um tamanho padrão */
+  width:350px;
+  height: 650px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1024px){
+  #profile-card{
+    position: static;
+    transform: none;
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+  }
+}
+
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 15px; /* Borda arredondada, mas ainda quadrada */
+  width: 130px;
+  height: 130px;
+  border-radius: 15px;
   object-fit: cover;
   border: 3px solid #124fbf;
 }
 
 #profile-card h1 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #fff;
   margin: 10px 0;
 }
 
 #profile-card p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ddd;
   margin-bottom: 15px;
 }
 
 .social-links {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .social-links a img {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   transition: transform 0.2s ease-in-out;
   filter: brightness(0) saturate(100%) invert(100%) !important;
+}
+
+/*#hero, #about, #projects, #contact{
+  margin-left: 230px;
+} */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
