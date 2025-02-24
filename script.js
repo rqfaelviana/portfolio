@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
     gsap.from("#profile-card", {
         opacity: 0,
         sacale: 0.8, 
-        duration: 1,
+        duration: 2.5,
         delay: 0.5,
     });
     //animação das seções ao rolar
