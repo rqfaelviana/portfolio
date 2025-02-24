@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function(){
     //animação da seção principal
     gsap.from("#profile-card", {
         opacity: 0,
-        sacale: 0.8, 
-        duration: 2.5,
+        scale: 0.8, 
+        duration: 1,
         delay: 0.5,
     });
     //animação das seções ao rolar
@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function(){
             duration: 1,
             scrollTrigger: {
                 trigger: section,
-                start: "top 80%",
+                start: "top 85%",
+                toggleActions: "play none none reverse",
             },
         });
     });
