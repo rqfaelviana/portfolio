@@ -52,63 +52,6 @@ nav ul li a {
   }
 }
 
-#hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 450px;
-  text-align: center;
-  margin-top: 30px;
-}
-
-#hero h2 {
-  font-size: 5.5rem;
-  font-weight: bold;
-  color: #124fbf;
-  margin-bottom: 20px;
-}
-
-#hero p {
-  font-size: 1.4rem;
-  color: #ddd;
-}
-
-/* responsividade do hero */
-@media (max-width: 1024px) {
-  #hero {
-    height: 350px;
-  }
-  #hero h2 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px){
-  #hero{
-    height: 280px;
-  }
-  #hero h2 {
-    font-size: 3.5rem;
-  }
-  #hero p {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 480px){
-  #hero {
-    height: 230px;
-  }
-  #hero h2 {
-    font-size: 2.8rem;
-  }
-  #hero p {
-    font-size: 1rem;
-  }
-}
-
 .tooltip {
   position: absolute;
   bottom: -15px;
@@ -142,63 +85,10 @@ section {
   text-align: center;
 }
 
-.project-card {
-  background: #124fbf;
-  padding: 25px;
-  border-radius: 15px;
-  margin: 30px auto;
-  max-width: 450px;
-}
-
-/* Responsividade geral */ 
-@media (max-width: 768px){
-  section {
-    padding: 50px;
-  }
-  .project-card{
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  section {
-    padding: 40px;
-  }
-  .project-card{
-    padding: 20px;
-  }
-}
 
 a {
   color: #124fbf;
   text-decoration: none;
-}
-
-#profile-card {
-  position: fixed;
-  left: 20vw;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #091122;
-  padding: 30px;
-  border-radius: 15px;
-  width:350px;
-  height: 650px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 1024px){
-  #profile-card{
-    position: static;
-    transform: none;
-    width: 90%;
-    max-width: 400px;
-    margin: 30px auto;
-  }
 }
 
 .profile-pic {
@@ -207,18 +97,6 @@ a {
   border-radius: 15px;
   object-fit: cover;
   border: 3px solid #124fbf;
-}
-
-#profile-card h1 {
-  font-size: 1.4rem;
-  color: #fff;
-  margin: 10px 0;
-}
-
-#profile-card p {
-  font-size: 1.1rem;
-  color: #ddd;
-  margin-bottom: 15px;
 }
 
 .social-links {
@@ -233,9 +111,6 @@ a {
   filter: brightness(0) saturate(100%) invert(100%) !important;
 }
 
-/*#hero, #about, #projects, #contact{
-  margin-left: 230px;
-} */
 .container {
   display: flex;
   flex-direction: column;
