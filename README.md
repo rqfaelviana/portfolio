@@ -1,4 +1,4 @@
-<h1 align="center">  Portfólio </h1>
+<h1 align="center">Portfólio</h1>
 
 <p align="center">
 Este é o meu portfólio pessoal, onde apresento meus projetos, habilidades e os serviços que posso oferecer.  
@@ -24,12 +24,16 @@ Aqui você encontrará exemplos do meu trabalho, minhas principais competências
 ## 🚀 Tecnologias  
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
 
 ---
 
 ## 📂 Portfólio  
 
-🔗 [Acesse aqui o meu portfólio](#)
+🔗 [Acesse aqui o meu portfólio](https://portfolio-ma3fxg0ty.vercel.app/)
 
 ---
 
