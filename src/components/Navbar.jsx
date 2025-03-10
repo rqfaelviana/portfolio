@@ -1,4 +1,4 @@
-import { Home, Folder, Headset, Wrench, Send, Star } from "lucide-react";
+import { Home, Folder, Headset, Wrench, Send, Star, User } from "lucide-react";
 
 const Navbar = () => {
   const handleScroll = (id) => {
@@ -25,7 +25,18 @@ const Navbar = () => {
         </button>
         <span className="tooltip absolute bottom-[-15px] left-1/2 transform -translate-x-1/2 bg-[#1f2833] text-white text-xs p-2 rounded-md opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:bottom-[-42px]">Início</span>
       </div>
-      
+
+      <div className="relative group">
+        <button 
+          onClick={() => handleScroll("AboutMe")} 
+          className="p-2 text-gray-300 hover:text-white transition transform scale-90 sm:scale-100"
+        >
+          <User size={20} />
+        </button>
+        <span className="tooltip absolute bottom-[-15px] left-1/2 transform -translate-x-1/2 bg-[#1f2833] text-white text-xs p-2 rounded-md opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:bottom-[-42px] whitespace-nowrap">
+        Sobre mim
+        </span>
+      </div>
       <div className="relative group">
         <button 
           onClick={() => handleScroll("projects")} 

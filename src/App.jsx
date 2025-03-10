@@ -5,6 +5,7 @@ import Services from './components/Services';
 import Tech from './components/Tech';
 import Contact from './components/Contact';
 import ProfessionalQualities from './components/ProfessionalQualities';
+import AboutMe from './components/AboutMe';
 
 export const App = () => {
   return (
@@ -18,11 +19,13 @@ export const App = () => {
         <div className="relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto">
           <Navbar />
           <Hero />
+          <AboutMe/>
           <Projects />
           <Services />
           <Tech />
           <ProfessionalQualities />
           <Contact />
+
         </div>
       </div>
     </>
