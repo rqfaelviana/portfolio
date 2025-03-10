@@ -9,23 +9,25 @@ import ProfessionalQualities from './components/ProfessionalQualities';
 export const App = () => {
   return (
     <>
-      <div
-        style={{ backgroundColor: "#00131c", height: "100vh" }}
-        className="fixed -z-10 min-h-screen w-full"
-      ></div>
+      <div className="relative h-full overflow-y-hidden antialiased"> 
+        <div 
+          className="fixed inset-0 bg-fixed bg-cover bg-center"
+          style={{ backgroundColor: "#00131c" }}
+        ></div>
 
-      <main className='flex flex-col items-center px-4 md:px-8 lg:px-16 gap-32'>
-        <Navbar />
-        <Hero />
-        <Projects />
-        <Services />
-        <Tech />
-        <ProfessionalQualities />
-        <Contact />
-        
-      </main>
+        <div className="relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto">
+          <Navbar />
+          <Hero />
+          <Projects />
+          <Services />
+          <Tech />
+          <ProfessionalQualities />
+          <Contact />
+        </div>
+      </div>
     </>
   );
 }
 
 export default App;
+
