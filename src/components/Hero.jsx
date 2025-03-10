@@ -9,7 +9,6 @@ const Hero = () => {
   return (
     <div id="home" className="flex min-h-screen w-full items-center justify-center py-16 px-6 md:px-8 lg:px-16 mt-[80px]">
       <div className="flex flex-col md:flex-row items-center gap-8 w-full max-w-screen-xl">
-        {/* Foto e Redes Sociais */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -42,7 +41,6 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Texto de Apresentação */}
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
